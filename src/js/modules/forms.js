@@ -69,7 +69,7 @@ const forms = () => {
             const formData = new FormData(item);
             let api;
             item.closest('.popup-design') || item.classList.contains('calc_form') ? api = path.designer : api = path.question;
-            console.log(api)
+            
 
             postData(api, formData).then( res => {
                 console.log(res);
