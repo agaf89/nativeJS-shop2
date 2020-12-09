@@ -71,7 +71,7 @@ const modals = (modalState={}) => {
                 let scroll = calcScroll();
                 let imgGifts = document.querySelector('.fixed-gift');
                 document.body.style.marginRight = `${scroll}px`;/* document.body.style.overflow = 'hidden' */
-                imgGifts.style.marginRight = `${scroll}px`;
+                imgGifts ? imgGifts.style.marginRight = `${scroll}px`: null;
                 
             }
         }, time);
@@ -89,7 +89,7 @@ const modals = (modalState={}) => {
         div.remove();
 
         return scrollWidth;
-    }
+    } 
 
     function openByScroll(selector){
         window.addEventListener('scroll', () => {

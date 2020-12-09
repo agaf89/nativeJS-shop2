@@ -78,6 +78,9 @@ h4 {
   color: #c51abb;
   border: 2px solid #c51abb;
 }
+.status{
+  text-align: center;
+}
 .button-transparent:before {
   content: '';
   background: url("../img/camera.svg") no-repeat center;
