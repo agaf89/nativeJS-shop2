@@ -1,7 +1,6 @@
 const mask =(selector)=>{
 
     let setCursorPosition = (pos, elem) => {
-        console.log(elem)
         elem.focus();
         if (elem.setSelectionRange){
             elem.setSelectionRange(pos, pos);

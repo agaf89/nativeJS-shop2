@@ -7,7 +7,9 @@ const checkNumInput = (selector) => {
             } 
         });
         input.addEventListener( 'change', function(e){
-            e.target.value = '';
+            if (e.target.value.match(/^[a-zA-Z]+$/)){
+                e.target.value = '';
+            } 
         });
     });
 };
